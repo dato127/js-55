@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button type="button" id="mouse" onclick="click()">click</button>
+
+
+    <script>
+        document.getElementById("mouse").addEventListener("mouseenter", mouseEnter);
+        document.getElementById("mouse").addEventListener("mouseleave", mouseLeave);
+
+        function mouseEnter() {
+            document.getElementById("mouse")
+            window.alert("მოხდა მაუსის მიტანა ღილაკზე")
+        }
+
+        function mouseLeave() {
+            document.getElementById("mouse");
+            window.alert("მოხდა მაუსის გატანა")
+        }
+
+        function click() {
+            document.getElementById("mouse")
+            window.alert("მოხდა დაკლიკება")
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
